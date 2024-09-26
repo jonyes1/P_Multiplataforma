@@ -1,0 +1,31 @@
+﻿<Window x:Class="wpfmulti.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpfmulti"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Figura">
+                <MenuItem x:Name="adicionarfiguras" Header="adicionar" Click="adicionarfiguras_Click"/>
+                <Separator/>
+                <MenuItem x:Name="figurasair" Header="sair" Click="figurasair_Click"/>
+            </MenuItem>
+        </Menu>
+        <Grid>
+            <ListBox x:Name="lbfiguras" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="75,57,545,56">
+                <ListBox.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Adicionar" Click="adicionarfiguras_Click"/>
+                    </ContextMenu>
+                </ListBox.ContextMenu>
+            </ListBox>
+            <Canvas x:Name="cCanvas" Margin="400,57,87,56" Background="Black"/>
+            <TextBox HorizontalAlignment="Left" Margin="75,18,0,0" TextWrapping="Wrap" Text="Descrição" VerticalAlignment="Top" Width="120" Height="26"/>
+            <TextBox HorizontalAlignment="Left" Margin="435,18,0,0" TextWrapping="Wrap" Text="Representação" VerticalAlignment="Top" Width="120"/>
+        </Grid>
+
+    </DockPanel>
+</Window>
