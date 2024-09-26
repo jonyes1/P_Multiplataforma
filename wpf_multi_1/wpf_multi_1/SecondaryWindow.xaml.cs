@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace wpfmulti
+namespace wpf_multi_1
 {
     /// <summary>
     /// Interação lógica para SecondaryWindow.xam
