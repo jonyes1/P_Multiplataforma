@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace wpf_multi_1
+namespace wpfmulti
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
